@@ -1,0 +1,59 @@
+/* Aplicamos la fuente Chewy a todo el sitio */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chewy', cursive; /* Fuente Chewy aplicada globalmente */
+}
+
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe5e5; /* Fondo suave */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 20px;
+}
+
+.container .tenor-gif-embed {
+    display: flex;
+    max-width: 200px;
+}
+
+.container .btn {
+    display: flex;
+    gap: 25px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(45deg, #ff6ec7, #ff9a8b);
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0.5rem 1rem 3rem rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn a:hover {
+    background: linear-gradient(45deg, #ff9a8b, #ff6ec7);
+    transform: scale(1.05);
+    box-shadow: 0.7rem 1.5rem 4rem rgba(0, 0, 0, 0.3);
+}
+
+.btn a:active {
+    transform: scale(0.98);
+}
